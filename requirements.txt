@@ -1,5 +1,4 @@
 discord.py==0.16.12
-asyncio.py
 os.py
 urllib.py
 commands.py

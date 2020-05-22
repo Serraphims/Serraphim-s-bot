@@ -355,6 +355,8 @@ async def on_message(message): # on_message() event : when the bot has recieved 
                     await message.channel.send("Error Code : " + responsedCode)
         except HTTPError as e:
             await message.channel.send("Translate Failed. HTTPError Occured.")
-client.run("NzEzNDMzMTM5NTI3MTU1NzYy.XsgWWA.u8vY1k3Ym8zzZUpQtPNMZQt15uY")
+            
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
 
